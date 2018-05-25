@@ -1,0 +1,144 @@
+
+<html>
+<head>
+    <title>Vue Post Reader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-vue/dist/bootstrap-vue.min.css" />
+
+
+
+</head>
+<body>
+
+
+
+
+<div id="app">
+
+
+    <b-navbar toggleable="md" type="dark" variant="info">
+
+        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+
+        <b-navbar-brand href="#">NavBar</b-navbar-brand>
+
+        <b-collapse is-nav id="nav_collapse">
+
+            <b-navbar-nav>
+                <b-nav-item href="#">Link</b-nav-item>
+                <b-nav-item href="#" disabled>Disabled</b-nav-item>
+            </b-navbar-nav>
+
+        </b-collapse>
+    </b-navbar>
+
+
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    </ul>
+
+
+
+    <static-post> </static-post>
+
+
+    <variable-data></variable-data>
+
+
+
+
+</div>
+
+
+
+
+
+<template id="variable">
+
+    <div>
+
+    <input v-model="nachricht" placeholder="SCHREIB WAS">
+    <h1>{{nachricht +"!!!"}}</h1>
+    </div>
+
+</template>
+
+
+
+
+
+    <template id="static-post-temp">
+        <div>
+
+            <input v-model="message" placeholder="edit me">
+            <p>Message is: {{ message }}</p>
+
+
+            <p>TESTEST</p>
+            <p>{{message}}</p>
+            <ul>
+            <li v-for="item in posts">{{item.title}}</li>
+            </ul>
+        </div>
+
+
+    </template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add this after vue.js -->
+
+<script src="node_modules/vue/dist/vue.js"></script>
+
+
+<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script  src="app.js"></script>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+</html>
