@@ -7,7 +7,7 @@ Vue.component('navigation-template', {
 
     template:`
     
-    <nav class="navbar navbar-expand-lg navbar-light maincolor navcolor">
+    <nav class="navbar navbar-expand-lg navbar-light maincolor navcolor sticky-top">
         <a class="navbar-brand maincolor " href="#">Navbar</a>
 
 

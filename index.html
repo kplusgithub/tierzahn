@@ -4,18 +4,27 @@
     <title>Die Tierartztpraxis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+    <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-vue/dist/bootstrap-vue.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700,800" rel="stylesheet">
 
 
+
+
 </head>
-<body>
+<body class="bg-color">
 
 <style>
     .navcolor {background-color: #b61e3e;}
     .maincolor {color: #f4f4f4 !important;}
+
+
+
+    .bg-color {
+        background-color: #f9f9f9;
+    }
+
 
     .containerH {
         position: relative;
@@ -31,18 +40,29 @@
     }
 
 
- .fontmain { font-family: 'Nunito Sans', sans-serif;
 
+
+
+ .fontmain {
+     font-family: 'Nunito Sans', sans-serif;
 
  }
 
-.headline {
+    .headline {
     font-size: 60px;
-}
+    }
 
 
     .subheadline {
         font-size: 40px;
+    }
+
+    .subheadline-small {
+        font-size: 30px;
+    }
+
+    .flowingtext {
+        font-size: 22px;
     }
 
     .fontcolor-red{
@@ -51,6 +71,17 @@
 
     .fontcolor-white{
         color: #f4f4f4;
+    }
+
+    .fontcolor-black{
+        color: #212121;
+    }
+
+
+
+
+    .gap-top-10 {
+        margin-top: 10px;
     }
 
 .gap-top-30 {
@@ -87,8 +118,8 @@
 
     <img src="assets/img/header.jpg" class="img-fluid" width="100%">
         <div class="bottom-left  fontcolor-red">
-            <p class="headline">HEADLINE</p>
-            <p class="subheadline">SUBHEADLINE</p>
+            <h1 class="headline">HEADLINE</h1>
+            <h2 class="subheadline">SUBHEADLINE</h2>
         </div>
 
 </div>
@@ -102,12 +133,119 @@
                 <div class="col"> <p class="subheadline fontcolor-red text-center">DAS SIND WIR</p> </div>
                 <div class="col"></div>
 
+            </div>
 
 
+        <div class="row gap-top-30">
+
+            <div class="col"></div>
+            <div class="col"> <p class="flowingtext fontcolor-black text-center">Lorem Ipusum Lorem Ipusum
+                Lorem Ipusum </p> </div>
+            <div class="col"></div>
+
+        </div>
+
+
+
+
+        <div class="row gap-top-60">
+
+            <div class="col ">
+
+                <div class="row">
+                    <div class="col "></div>
+                    <div class="col ">
+
+
+                    <p class="subheadline-small fontcolor-red">DIE TIERARTZTPRAXIS</p>
+                <p class="flowingtext fontcolor-black">Lorem Ipusum Lorem Ipusum
+                    Lorem Ipusum </p>
+                <button type="button" class="btn btn-outline-danger gap-top-10" style="align:right">DR PIER</button>
+
+                    </div>
+                    <div class="col "></div>
+
+                </div>
 
             </div>
 
 
+            <div class="col">
+
+                <div class="row">
+                    <div class="col "></div>
+                    <div class="col ">
+
+
+                          <p class="subheadline-small fontcolor-red" style="white-space: nowrap;">ZENTRUM FÜR TIERZAHNHEILKUNDE</p>
+                         <p class="flowingtext fontcolor-black">Lorem Ipusum Lorem Ipusum
+                          Lorem Ipusum </p>
+                        <button type="button" class="btn btn-outline-danger gap-top-10" style="align:right">DR KRÜGER</button>
+                       <button type="button" class="btn btn-outline-secondary gap-top-10">PATIENTENFOTOS</button>
+
+                    </div>
+                    <div class="col "></div>
+
+            </div>
+
+
+            </div>
+        </div>
+
+
+
+
+<!--DIE PRAXIS -->
+
+
+            <div class="row gap-top-120">
+
+                <div class="col "></div>
+                <div class="col ">   <p class="subheadline fontcolor-red text-center">DIE PRAXIS</p></div>
+
+                <div class="col "></div>
+
+            </div>
+
+        <img src="assets/img/header-praxis.jpg" class="img-fluid" width="100%">
+
+
+        <div class="row gap-top-60">
+            <div class="col">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">  <p class="flowingtext fontcolor-black">Lorem Ipusum Lorem Ipusum
+                        Lorem Ipusum </p></div>
+                    <div class="col"></div>
+
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">  <p class="flowingtext fontcolor-black">Lorem Ipusum Lorem Ipusum
+                        Lorem Ipusum </p></div>
+                    <div class="col"></div>
+
+
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">  <p class="flowingtext fontcolor-black">Lorem Ipusum Lorem Ipusum
+                        Lorem Ipusum </p></div>
+                    <div class="col"></div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
 
 
 
@@ -115,6 +253,65 @@
 
 
 
+
+    <!--DAS TEAM -->
+
+
+        <div class="row gap-top-120">
+
+            <div class="col "></div>
+            <div class="col ">   <p class="subheadline fontcolor-red text-center">DAS TEAM</p></div>
+
+            <div class="col "></div>
+
+        </div>
+
+
+<div class="row  gap-top-60">
+
+    <div class="col">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/team/kerstin-stepken.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Kerstin Stepken</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <span class="badge badge-secondary">Fachkraft</span>
+            </div>
+        </div>
+        </div>
+
+    <div class="col ">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/team/kerstin-stepken.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Kerstin Stepken</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <span class="badge badge-secondary">Fachkraft</span>
+            </div>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/team/kerstin-stepken.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Kerstin Stepken</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <span class="badge badge-secondary">Fachkraft</span>
+            </div>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/team/kerstin-stepken.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Kerstin Stepken</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <span class="badge badge-secondary">Fachkraft</span>
+            </div>
+        </div>
+    </div>
+
+    </div>
 
 
 
@@ -122,9 +319,7 @@
 
     </div> <!-- END containerfluid-->
 
-
-
-</div>
+</div> <!-- APP END-->
 
 
 
@@ -157,12 +352,6 @@
 
 
 <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
-<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
-
-
-
-
-
 
 
 
