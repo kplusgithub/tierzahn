@@ -1,62 +1,57 @@
 
 
 
-Vue.component('static-post', {
-
-    // setting the template that this component will use to render
-    template: '#static-post-temp',
-
-    // the data function is where we define all the variables this component will need
-    // in this specific case, we only need to worry about an array of posts
-    data: () => ({
-    posts: [],
-    message: 'he'
-}),
-
-    // this is called whenever this component is mounted onto the DOM
-    // basically whenever we want to show all the posts, we go and get them
-mounted() {
-    this.getPosts();
-    this.getMessage();
-},
-
-
-// this is where you define all the methods this component needs
-methods: {
-
-    // getPost simply sets the 'posts' variable with static data
-    getPosts() {
-        this.posts = [
-            {
-                "title": "The first post title!"
-            },
-            {
-                "title": "The second post title!"
-            },
-            {
-                "title": "The third post title!"
-            }
-        ];
-    },
-
-    getMessage(){
-        this.message="HALLO"
-
-
-    }
-
-}
-});
-
-
-
-
-
 var datatemp={nachricht:""};
 
-Vue.component('variable-data', {
+Vue.component('navigation-template', {
 
-    template:"#variable",
+    template:`
+    
+    <nav class="navbar navbar-expand-lg navbar-light maincolor navcolor">
+        <a class="navbar-brand maincolor " href="#">Navbar</a>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto maincolor">
+                <li class="nav-item ">
+                    <a class=" nav-link maincolor" href="#">TIERARZTPRAXIS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link maincolor" href="#">TIERZAHNHEILKUNDE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link maincolor" href="#">PRAXIS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link maincolor" href="#">TEAM</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link maincolor" href="#">FAQ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link maincolor" href="#">JOBS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link maincolor" href="#">PRESSE</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link maincolor" href="#">KONTAKT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link maincolor" href="#">IMPRESSUM/ DATENSCHUTZ</a>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+    </nav>`,
 
     data: function(){
 

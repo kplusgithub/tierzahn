@@ -1,63 +1,126 @@
 
 <html>
 <head>
-    <title>Vue Post Reader</title>
+    <title>Die Tierartztpraxis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
     <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-vue/dist/bootstrap-vue.min.css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700,800" rel="stylesheet">
 
 
 </head>
 <body>
 
+<style>
+    .navcolor {background-color: #b61e3e;}
+    .maincolor {color: #f4f4f4 !important;}
+
+    .containerH {
+        position: relative;
+        text-align: center;
+
+    }
+
+
+    .bottom-left {
+        position: absolute;
+        bottom: 180px;
+        left: 20%;
+    }
+
+
+ .fontmain { font-family: 'Nunito Sans', sans-serif;
+
+
+ }
+
+.headline {
+    font-size: 60px;
+}
+
+
+    .subheadline {
+        font-size: 40px;
+    }
+
+    .fontcolor-red{
+        color:  #b61e3e;
+    }
+
+    .fontcolor-white{
+        color: #f4f4f4;
+    }
+
+.gap-top-30 {
+    margin-top: 30px;
+}
+
+    .gap-top-60 {
+        margin-top: 60px;
+    }
+
+    .gap-top-90 {
+        margin-top: 90px;
+    }
+
+    .gap-top-120 {
+        margin-top: 120px;
+    }
+    .gap-top-240 {
+        margin-top: 240px;
+    }
+
+</style>
+
+
+<div id="app" class="fontmain">
 
 
 
-<div id="app">
-
-
-    <b-navbar toggleable="md" type="dark" variant="info">
-
-        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-
-        <b-navbar-brand href="#">NavBar</b-navbar-brand>
-
-        <b-collapse is-nav id="nav_collapse">
-
-            <b-navbar-nav>
-                <b-nav-item href="#">Link</b-nav-item>
-                <b-nav-item href="#" disabled>Disabled</b-nav-item>
-            </b-navbar-nav>
-
-        </b-collapse>
-    </b-navbar>
-
-
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-    </ul>
+    <navigation-template></navigation-template>
 
 
 
-    <static-post> </static-post>
+    <div class="containerH">
+
+    <img src="assets/img/header.jpg" class="img-fluid" width="100%">
+        <div class="bottom-left  fontcolor-red">
+            <p class="headline">HEADLINE</p>
+            <p class="subheadline">SUBHEADLINE</p>
+        </div>
+
+</div>
 
 
-    <variable-data></variable-data>
+    <div class="container-fluid">
 
+            <div class="row gap-top-60">
+
+                <div class="col"></div>
+                <div class="col"> <p class="subheadline fontcolor-red text-center">DAS SIND WIR</p> </div>
+                <div class="col"></div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div> <!-- END containerfluid-->
 
 
 
@@ -67,36 +130,14 @@
 
 
 
-<template id="variable">
-
-    <div>
-
-    <input v-model="nachricht" placeholder="SCHREIB WAS">
-    <h1>{{nachricht +"!!!"}}</h1>
-    </div>
-
-</template>
 
 
 
 
 
-    <template id="static-post-temp">
-        <div>
-
-            <input v-model="message" placeholder="edit me">
-            <p>Message is: {{ message }}</p>
 
 
-            <p>TESTEST</p>
-            <p>{{message}}</p>
-            <ul>
-            <li v-for="item in posts">{{item.title}}</li>
-            </ul>
-        </div>
 
-
-    </template>
 
 
 
