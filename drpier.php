@@ -155,7 +155,9 @@
 }
 
 
-
+li {
+    float: left;
+}
 
 
 
@@ -194,10 +196,11 @@
     <div class="container-fluid">
 
 
+<!-- PATRIENTENFOTOS -->
 
-
-
-
+<div class="row">
+<div class="col"></div>
+<div class="col">
 
 
 
@@ -206,28 +209,44 @@
 
 
 
-        <script>
-            function myFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("myUL");
-                li = ul.getElementsByTagName("li");
+<script>
+    function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
 
-                if (filter.length >4) {   //NUMBER OF CHARAKTERS- FOR SAFETY
+        if (filter.length >4) {   //NUMBER OF CHARAKTERS- FOR SAFETY
 
-                    for (i = 0; i < li.length; i++) {
-                        a = li[i].getElementsByTagName("p")[0];
-                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                            li[i].style.display = "block";
-                        } else {
-                            li[i].style.display = "none";
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("p")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "block";
+                } else {
+                    li[i].style.display = "none";
 
-                        }
-                    }
                 }
             }
-        </script>
+        }
+        else {
+
+
+            for (i = 0; i < li.length; i++) {
+
+                    li[i].style.display = "none";
+
+
+            }
+
+
+
+
+
+        }
+
+    }
+</script>
 
 
 
@@ -253,12 +272,12 @@ while (($f = $dirHandle->read()) != false) {
 
         $verz=opendir('bilder/'.$f);
 
- echo " <ul id=\"myUL\">";
+ echo " <ul id=\"myUL\" class=\"list-inline\">";
 
         while($file = readdir($verz)){
         if($file != '.' && $file != '..'){
         $info = getimagesize($verz.$file);
-        echo "<li class=\"liste\"><p> $f</p> <a href=\"bilder/$f/$file\" ><img  src=\"bilder/$f/$file\" $info[3] width=\"120\" height=\"auto\" alt=\"\"></a></li>";
+        echo "<li class=\"liste list-inline-item\"><p style=\"display:none;\"> $f</p> <a href=\"bilder/$f/$file\" ><img  src=\"bilder/$f/$file\" $info[3] width=\"120\" height=\"auto\" alt=\"\"></a></li>";
 
         }
         }
@@ -279,8 +298,9 @@ while (($f = $dirHandle->read()) != false) {
         ?>
 
 
-
-
+</div>
+<div class="col"></div>
+</div><!-- ENDROW-->
 
 
 
