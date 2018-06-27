@@ -198,7 +198,19 @@ li {
 
 <!-- PATRIENTENFOTOS -->
 
-<div class="row">
+
+    <div class="row gap-top-120">
+
+                <div class="col "></div>
+                <div class="col ">   <h2 class="subheadline fontcolor-red text-center">PATIENTENFOTOS</h2></div>
+
+                <div class="col "></div>
+
+            </div>
+
+
+
+<div class="row gap-top-30">
 <div class="col"></div>
 <div class="col">
 
@@ -277,7 +289,7 @@ while (($f = $dirHandle->read()) != false) {
         while($file = readdir($verz)){
         if($file != '.' && $file != '..'){
         $info = getimagesize($verz.$file);
-        echo "<li class=\"liste list-inline-item\"><p style=\"display:none;\"> $f</p> <a href=\"bilder/$f/$file\" ><img  src=\"bilder/$f/$file\" $info[3] width=\"120\" height=\"auto\" alt=\"\"></a></li>";
+        echo "<li class=\"liste list-inline-item\"><p style=\"display:none;\"> $f</p> <a href=\"bilder/$f/$file\" ><img  src=\"bilder/$f/$file\" $info[3] width=\"130\" height=\"auto\" alt=\"\"></a></li>";
 
         }
         }
