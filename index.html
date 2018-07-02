@@ -8,6 +8,36 @@
     <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-vue/dist/bootstrap-vue.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -15,101 +45,6 @@
 </head>
 <body class="bg-color">
 
-<style>
-    .navcolor {background-color: #b61e3e;}
-    .maincolor {color: #f4f4f4 !important;}
-
-
-
-    .bg-color {
-        background-color: #f9f9f9;
-    }
-
-
-    .containerH {
-        position: relative;
-        text-align: center;
-
-    }
-
-
-    .bottom-left {
-        position: absolute;
-        bottom: 180px;
-        left: 20%;
-    }
-
-
-
-
-
- .fontmain {
-     font-family: 'Nunito Sans', sans-serif;
-
- }
-
-    .headline {
-    font-size: 60px;
-    }
-
-
-    .subheadline {
-        font-size: 40px;
-    }
-
-    .subheadline-small {
-        font-size: 30px;
-    }
-
-    .flowingtext {
-        font-size: 22px;
-    }
-
-    .fontcolor-red{
-        color:  #b61e3e;
-    }
-
-    .fontcolor-white{
-        color: #f4f4f4;
-    }
-
-    .fontcolor-black{
-        color: #212121;
-    }
-
-
-
-
-    .gap-top-10 {
-        margin-top: 10px;
-    }
-
-.gap-top-30 {
-    margin-top: 30px;
-}
-
-    .gap-top-60 {
-        margin-top: 60px;
-    }
-
-    .gap-top-90 {
-        margin-top: 90px;
-    }
-
-    .gap-top-120 {
-        margin-top: 120px;
-    }
-    .gap-top-240 {
-        margin-top: 240px;
-    }
-
-
-    .card{
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-
-</style>
 
 
 <div id="app" class="fontmain">
@@ -117,6 +52,34 @@
 
 
     <navigation-template></navigation-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -166,7 +129,7 @@
                     <p class="subheadline-small fontcolor-red">DIE TIERARTZTPRAXIS</p>
                 <p class="flowingtext fontcolor-black">Lorem Ipusum Lorem Ipusum
                     Lorem Ipusum </p>
-                <button type="button" class="btn btn-outline-danger gap-top-10" style="align:right">DR PIER</button>
+                <button type="button" class="btn btn-outline-danger gap-top-10" >DR PIER</button>
 
                     </div>
                     <div class="col "></div>
@@ -186,7 +149,7 @@
                           <p class="subheadline-small fontcolor-red" style="white-space: nowrap;">ZENTRUM FÜR TIERZAHNHEILKUNDE</p>
                          <p class="flowingtext fontcolor-black">Lorem Ipusum Lorem Ipusum
                           Lorem Ipusum </p>
-                        <button type="button" class="btn btn-outline-danger gap-top-10" style="align:right">DR KRÜGER</button>
+                        <button type="button" class="btn btn-outline-danger gap-top-10">DR KRÜGER</button>
                        <button type="button" class="btn btn-outline-secondary gap-top-10">PATIENTENFOTOS</button>
 
                     </div>
@@ -362,17 +325,19 @@
 <div class="row gap-top-30">
 
 
-    <div class="col card">
+    <div class="col-sm card">
         <div class="card-body">
-            <h3 class="card-text">Was ist ein Hund?.</h3>
+          <h3 class="card-text toggle-content-element">Was ist ein Hund?. <span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3>
+            <p class="card-text flowingtext toggle-element">Ein Dalmatiner</p>
         </div>
     </div>
-    <div class="col card">
-        <div class="card-body">
-        <h3 class="card-text">Was ist ein Hund?.</h3>
-    </div>
-    </div>
 
+    <div class="col-sm card">
+        <div class="card-body">
+            <h3 class="card-text toggle-content-element">Was ist ein Hund?. <span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3>
+            <p class="card-text flowingtext toggle-element">Ein Dalmatiner</p>
+        </div>
+    </div>
 
 
 </div>
@@ -382,14 +347,18 @@
         <div class="row gap-top-30">
 
 
-            <div class="col card">
+            <div class="col-sm card">
                 <div class="card-body">
-                    <h3 class="card-text">Was ist ein Hund?.</h3>
+                    <h3 class="card-text toggle-content-element">Was ist ein Hund?. <span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3>
+                    <p class="card-text flowingtext toggle-element">Ein Dalmatiner</p>
                 </div>
             </div>
-            <div class="col card">
+
+
+            <div class="col-sm card">
                 <div class="card-body">
-                    <h3 class="card-text">Was ist ein Hund?.</h3>
+                    <h3 class="card-text toggle-content-element">Was ist ein Hund?. <span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3>
+                    <p class="card-text flowingtext toggle-element">Ein Dalmatiner</p>
                 </div>
             </div>
 
@@ -402,7 +371,293 @@
 
 
 
+        <!-- JOBS-->
 
+
+        <div class="row gap-top-120">
+
+            <div class="col "></div>
+            <div class="col ">   <p class="subheadline fontcolor-red text-center">JOBS</p></div>
+
+            <div class="col "></div>
+
+        </div>
+
+
+
+        <div class="row gap-top-30">
+
+            <div class="col-sm "></div>
+
+            <div class="col-sm card">
+                <div class="card-body">
+                    <h3 class="card-text">Tiermedizinische Fachkraft</h3>
+
+                        <h4 class="card-text gap-top-30">Das erwartet dich.</h4>
+                        <ul class="flowingtext gap-top-30">
+                            <li>Tierischer Spass</li>
+                            <li>Familiäre Atmoshpere</li>
+                            <li>Spannende Aufgaben</li>
+
+                        </ul>
+
+                        <h4 class="card-text gap-top-30">Das erwarten wir von dir</h4>
+                        <ul class="flowingtext gap-top-30">
+                            <li>Teamfähigkeit</li>
+                            <li>Fleiss</li>
+                            <li>Hämdchen für Tiere</li>
+
+                        </ul>
+
+                    <h3 class="gap-top-60"> Bewerbe dich jetzt! <a href="mailto:praxis@kruegerpiervet.de" class="fontcolor-red">praxis@kruegerpiervet.de</a></h3>
+
+                </div>
+            </div>
+
+
+            <div class="col-sm "></div>
+
+        </div>
+
+
+
+
+
+
+        <!-- PRESSE-->
+
+
+
+        <div class="row gap-top-120">
+
+            <div class="col "></div>
+            <div class="col ">   <p class="subheadline fontcolor-red text-center">PRESSE</p></div>
+
+            <div class="col "></div>
+
+        </div>
+
+        <img src="assets/img/header-presse.jpg" class="img-fluid" width="100%">
+
+
+
+
+
+
+
+        <div class="row gap-top-30 justify-content-md-center">
+
+        <div class="col col-lg-2">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top gap-top-30" src="assets/img/presse/logo_welle_niederrhein.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Radio Interview mit Welle Niederrhein. </h5>
+                    <a class="fontcolor-red" href="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F69926769&amp"> Interview </a>
+                    <span class="badge badge-secondary">Audio</span>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-md-auto">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img class="card-img-top gap-top-30" src="assets/img/presse/logo_wdr.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Der Westdeutsche Rundfunk war bei uns zu Gast.</h5>
+                        <a class="fontcolor-red" href="http://player.vimeo.com/video/45953959">Fernsehnbeitrag</a>
+                        <span class="badge badge-secondary">Video</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col col-lg-2">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img class="card-img-top gap-top-30" src="assets/img/presse/logo_sat1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Sat. 1 hat einen Beitrag über die Tierarztpraxis gesendet.</h5>
+                        <a class="fontcolor-red" href="http://player.vimeo.com/video/45953960">Fernsehnbeitrag</a>
+                        <span class="badge badge-secondary">Video</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="row gap-top-30 justify-content-md-center">
+
+            <div class="col col-lg-2">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img class="card-img-top gap-top-30" src="assets/img/presse/logo_welle_niederrhein.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Die Rheinische Post hat einen Artikel über Tierarztpraxis veröffentlicht. </h5>
+                        <a class="fontcolor-red" href="assets/img/presse/2011_04_Rheinische_Post.jpg"> Zeitungsartikel </a>
+                        <span class="badge badge-secondary">Text</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-auto">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img class="card-img-top gap-top-30" src="assets/img/presse/logo_wz.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">In der WZ wurde ein Artikel über die Tierarztpraxis veröffentlicht. </h5>
+                        <a class="fontcolor-red" href="assets/img/presse/2011_06_WZ.jpg">Zeitungsartikel</a>
+                        <span class="badge badge-secondary">Text</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col col-lg-2">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img class="card-img-top gap-top-30" src="assets/img/presse/logo_stadtspiegel.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Lesen Sie im Krefelder Stadt Spiegel über uns .</h5>
+                        <a class="fontcolor-red" href="assets/img/presse/2011_04_Stadtspiegel_Krefeld.jpg">Zeitungsartikel I</a>
+                        <span class="badge badge-secondary">Text</span>
+                        <a class="fontcolor-red" href="assets/img/presse/2011_05_Stadtspiegel_Krefeld.jpg">Zeitungsartikel II</a>
+                        <span class="badge badge-secondary">Text</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <div class="row gap-top-30 justify-content-md-center">
+
+            <div class="col col-lg-2">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img class="card-img-top gap-top-30" src="assets/img/presse/logo_anton.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Anton – Das andere Tiermagazin hat einen Artikel über die Tierarztpraxis veröffentlicht.</h5>
+                        <a class="fontcolor-red" href="assets/img/presse/2011_10_Anton_Artikel.jpg"> Zeitungsartikel </a>
+                        <span class="badge badge-secondary">Text</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-auto">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img class="card-img-top gap-top-30" src="assets/img/presse/logo_wz.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Das Stadtteil-Magazin Hallo Uerdingen war zu Besuch im neuen Zentrum für Tierzahnheilkunde.</h5>
+                        <a class="fontcolor-red" href="assets/img/presse/2011_04_Hallo_Uerdingen_Artikel.jpg">Zeitungsartikel I</a>
+                        <span class="badge badge-secondary">Text</span>
+                        <a class="fontcolor-red" href="assets/img/presse/2011_04_Hallo_Uerdingen_Artikel.jpg">Zeitungsartikel II</a>
+                        <span class="badge badge-secondary">Text</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col col-lg-2">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img class="card-img-top gap-top-30" src="assets/img/presse/logo_nb.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Die Niederrheinischen Blätter haben über uns berichtet..</h5>
+                        <a class="fontcolor-red" href="assets/img/presse/2008_08_Niederrheinische_Blaetter.jpg">Zeitungsartikel</a>
+
+                        <span class="badge badge-secondary">Text</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+<!-- KONTAKT -->
+
+
+        <div class="row gap-top-120 navcolor">
+
+            <div class="col "></div>
+            <div class="col ">   <p class="subheadline fontcolor-white text-center gap-top-60">KONTAKT</p></div>
+
+            <div class="col "></div>
+
+        </div>
+
+        <div class="row  navcolor">
+
+
+            <div class="col gap-top-30 text-center"><a href="tel:+492151480077"><i class="material-icons md-light md-72">phone</i></a></div>
+
+
+
+            <div class="col ">
+
+                <div class="row gap-top-30">
+
+
+
+                         <div class="col-sm">
+                         <p class="fontcolor-white flowingtext-small bold nomargin-bottom">Dr. med. vet. Cornelia Pier</p>
+                             <p class="fontcolor-white flowingtext-small nomargin-bottom">Praktische Tierärztin</p>
+
+                          <p class="fontcolor-white flowingtext-small bold gap-top-30 nomargin-bottom"> Dr. med. vet. Jochen Krüger Fachtierarzt</p>
+                             <p class="fontcolor-white flowingtext-small nomargin-bottom">für Kleintiere Zahnheilkunde für Tiere</p>
+                         </div>
+
+
+
+
+
+                    <div class="col-sm">
+
+                        <p class="fontcolor-white flowingtext-small bold">Adresse</p>
+                        <p class="fontcolor-white flowingtext-small nomargin-bottom">Wüstrathstraße 10</p>
+                        <p class="fontcolor-white flowingtext-small nomargin-bottom"> D-47829 Krefeld</p>
+                        <p class="fontcolor-white flowingtext-small ">Telefon +49 (0) 2151 48 00 77</p>
+                        <p class="fontcolor-white flowingtext-small ">Fax +49 (0) 2151 48 00 78</p>
+                        <p class="fontcolor-white flowingtext-small "> E-Mail praxis@kruegerpiervet.de</p>
+
+                    </div>
+
+
+                    <div class="col-sm">
+
+                        <p class="fontcolor-white flowingtext-small bold">Sprechzeiten</p>
+                        <p class="fontcolor-white flowingtext-small nomargin-bottom">Mo 	10–12 und 16–19</p>
+                        <p class="fontcolor-white flowingtext-small nomargin-bottom">Di / Do / Fr 	10–12 und 16–18</p>
+                        <p class="fontcolor-white flowingtext-small ">Mi 	10–14</p>
+                        <p class="fontcolor-white flowingtext-small ">Termine nach Vereinbarung</p>
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col text-center"><a href="mailto:praxis@kruegerpiervet.de"><i class="material-icons md-light md-72 ">mail</i></a></div>
+
+
+        </div>
 
 
     </div> <!-- END containerfluid-->
@@ -414,6 +669,46 @@
 
 
 
+<!-- MAP -->
+
+<div id="mapid"></div>
+
+
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+        integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+        crossorigin=""></script>
+
+
+
+
+
+
+
+<div class="container">
+
+
+    <div class="row gap-top-120">
+
+        <div class="col "></div>
+        <div class="col text-center">   <p class="subheadline fontcolor-red text-center gap-top-60">IMPRESSUM & DATENSCHUTZ</p></div>
+
+        <div class="col "></div>
+
+    </div>
+
+
+    <div class="row gap-top-60">
+
+        <div class="col "></div>
+        <div class="col text-center">   <button type="button" class="btn btn-outline-danger gap-top-10 " >IMPRESSUM & DATENSCHUTZ</button></div>
+
+        <div class="col "></div>
+
+    </div>
+
+<div class="gap-top-120"></div>
+
+</div>
 
 
 
@@ -428,6 +723,40 @@
 
 
 
+
+
+
+
+
+
+<script>
+
+var mymap = L.map('mapid').setView([51.35377, 6.64292], 19);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYW5vbnltb3NrcGx1cyIsImEiOiJjamo0ZGlvN28xa214M3ZvNGQzbXMzMnp3In0.eA9e66OpGxtT59nMcC3K4g', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+
+
+var marker = L.marker([51.35377,6.64292]).addTo(mymap);
+
+
+marker.bindPopup("<h1 class='subheadline-small'>Zentrum für Tierzahnheilkunde</h1>").openPopup();
+mymap.scrollWheelZoom.disable();
+</script>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $(".toggle-content-element").click(function(){
+                $(this).next().slideToggle();
+            });
+        });
+    </script>
 
 
 
@@ -437,7 +766,7 @@
 <script src="node_modules/vue/dist/vue.js"></script>
 
 
-<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+<script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
 
 
 
@@ -451,9 +780,6 @@
 
 
 
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </body>

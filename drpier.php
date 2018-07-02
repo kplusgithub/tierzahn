@@ -262,10 +262,19 @@ li {
 
 
 
+<script type="text/javascript">
+$(function() { // called when page is done loading; you can have lots of these
+  $.ajax({
+    url: 'ajax.php',
+    success: function(data) { $('#load-me-later').html(data); }
+  });
+});
+</script>
+
+<div id="load-me-later"></div>
 
 
-
-        <?php
+    /*    <?php
 
 $dirHandle = dir("bilder");
  $verz=opendir('bilder/');
@@ -307,7 +316,7 @@ while (($f = $dirHandle->read()) != false) {
  echo " </ul>";
         // Verzeichnis wieder schließen
         $dirHandle->close();
-        ?>
+        ?>*/
 
 
 </div>
