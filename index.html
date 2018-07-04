@@ -240,7 +240,7 @@
 
     <div class="col">
         <div class="card mx-auto" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/team/kerstin-stepken.jpg" alt="Card image cap">
+            <img class="card-img-top" src="assets/img/team/Alexandra-Konieczny.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Kerstin Stepken</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -251,7 +251,37 @@
 
     <div class="col ">
         <div class="card mx-auto" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/team/kerstin-stepken.jpg" alt="Card image cap">
+            <img class="card-img-top" src="assets/img/team/alexander-hendricks.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Kerstin Stepken</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <span class="badge badge-secondary">Fachkraft</span>
+            </div>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/team/hannah.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Kerstin Stepken</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <span class="badge badge-secondary">Fachkraft</span>
+            </div>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/team/Nicola-hauser.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Kerstin Stepken</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <span class="badge badge-secondary">Fachkraft</span>
+            </div>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/team/Angela.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Kerstin Stepken</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -269,29 +299,10 @@
             </div>
         </div>
     </div>
+
     <div class="col ">
         <div class="card mx-auto" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/team/kerstin-stepken.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Kerstin Stepken</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span class="badge badge-secondary">Fachkraft</span>
-            </div>
-        </div>
-    </div>
-    <div class="col ">
-        <div class="card mx-auto" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/team/kerstin-stepken.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Kerstin Stepken</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span class="badge badge-secondary">Fachkraft</span>
-            </div>
-        </div>
-    </div>
-    <div class="col ">
-        <div class="card mx-auto" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/team/kerstin-stepken.jpg" alt="Card image cap">
+            <img class="card-img-top" src="assets/img/team/talena.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Kerstin Stepken</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -731,34 +742,86 @@
 
 <script>
 
-var mymap = L.map('mapid').setView([51.35377, 6.64292], 19);
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYW5vbnltb3NrcGx1cyIsImEiOiJjamo0ZGlvN28xa214M3ZvNGQzbXMzMnp3In0.eA9e66OpGxtT59nMcC3K4g', {
+/*
+
+    var MYNS = MYNS || {};
+
+    MYNS.leafletmap={
+
+
+        mymap: L.map('mapid').setView([51.35377, 6.64292], 19),
+
+
+        init: function () {
+            MYNS.leafletmap.mymap.scrollWheelZoom.disable();
+           var marker = L.marker([51.35377,6.64292]).addTo(MYNS.leafletmap.mymap);
+            marker.bindPopup("<h1 class='subheadline-small'>Zentrum für Tierzahnheilkunde</h1>").openPopup();
+
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYW5vbnltb3NrcGx1cyIsImEiOiJjamo0ZGlvN28xa214M3ZvNGQzbXMzMnp3In0.eA9e66OpGxtT59nMcC3K4g', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                maxZoom: 18,
+                id: 'mapbox.streets',
+                accessToken: 'your.mapbox.access.token'
+            }).addTo(MYNS.leafletmap.mymap);
+
+            return this.mymap;
+
+        }
+
+
+    };
+
+
+MYNS.leafletmap.init();*/
+
+
+
+/*var mymap = L.map('mapid').setView([51.35377, 6.64292], 19);*/
+
+/*L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYW5vbnltb3NrcGx1cyIsImEiOiJjamo0ZGlvN28xa214M3ZvNGQzbXMzMnp3In0.eA9e66OpGxtT59nMcC3K4g', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.streets',
     accessToken: 'your.mapbox.access.token'
-}).addTo(mymap);
+}).addTo(MYNS.leafletmap.mymap);*/
 
 
-var marker = L.marker([51.35377,6.64292]).addTo(mymap);
+/*var marker = L.marker([51.35377,6.64292]).addTo(MYNS.leafletmap.mymap);*/
 
 
-marker.bindPopup("<h1 class='subheadline-small'>Zentrum für Tierzahnheilkunde</h1>").openPopup();
-mymap.scrollWheelZoom.disable();
-</script>
+  /*  MYNS.leafletmap.marker.bindPopup("<h1 class='subheadline-small'>Zentrum für Tierzahnheilkunde</h1>").openPopup();*/
+/*MYNS.leafletmap.mymap.scrollWheelZoom.disable();*/
 
 
 
-    <script>
+
+       /* MYNS.toggle= function () {
+            $(document).ready(function(){
+                $(".toggle-content-element").click(function(){
+                    $(this).next().slideToggle();
+                });
+            });
+
+
+        }
+
+
+         MYNS.toggle();*/
+
+/*
         $(document).ready(function(){
             $(".toggle-content-element").click(function(){
                 $(this).next().slideToggle();
             });
-        });
+        });*/
+
+
+
+
     </script>
 
-
+<script src="dist/bundle.js"></script>
 
 
 <!-- Add this after vue.js -->
