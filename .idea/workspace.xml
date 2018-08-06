@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32e9be0c-60b1-4a91-b23b-f5c421df9bff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/faq.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/toggle.js" afterPath="$PROJECT_DIR$/assets/js/toggle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/faq.js" afterPath="$PROJECT_DIR$/assets/js/faq.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,11 +60,11 @@
       <file leaf-file-name="faq.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/faq.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="663">
+              <caret line="69" column="70" lean-forward="true" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
               <folding>
-                <marker date="1533564067696" expanded="true" signature="977:990" ph="..." />
-                <marker date="1533564067696" expanded="true" signature="1284:1297" ph="..." />
+                <marker date="1533566755969" expanded="true" signature="978:991" ph="..." />
+                <marker date="1533566755969" expanded="true" signature="1287:1300" ph="..." />
               </folding>
             </state>
           </provider>
@@ -440,12 +433,12 @@
       <updated>1529936845658</updated>
       <workItem from="1529936847732" duration="32908000" />
       <workItem from="1530517132321" duration="35865000" />
-      <workItem from="1533541565651" duration="13454000" />
+      <workItem from="1533541565651" duration="16072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82227000" />
+    <option name="totallyTimeSpent" value="84845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -770,16 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/leaflet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding>
-            <marker date="1530694101590" expanded="true" signature="633:639" ph="©" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drpier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="661">
@@ -788,11 +771,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faq.json">
+    <entry file="file://$PROJECT_DIR$/assets/js/leaflet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="493">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <marker date="1530694101590" expanded="true" signature="633:639" ph="©" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -823,13 +808,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/faq.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/faq.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="663">
+          <caret line="69" column="70" lean-forward="true" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
           <folding>
-            <marker date="1533564067696" expanded="true" signature="977:990" ph="..." />
-            <marker date="1533564067696" expanded="true" signature="1284:1297" ph="..." />
+            <marker date="1533566755969" expanded="true" signature="978:991" ph="..." />
+            <marker date="1533566755969" expanded="true" signature="1287:1300" ph="..." />
           </folding>
         </state>
       </provider>

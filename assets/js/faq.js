@@ -52,40 +52,39 @@ var FAQTZ=(function(){
         function domWrite(xhttp) {
 
 
-            var template= '<div class="row gap-top-30"><div class="col-sm card"><div class="card-body"><h3 class="card-text toggle-content-element question">%question%<span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3><p class="card-text flowingtext toggle-element answer">%answer%</p></div></div><div class="col-sm card"><div class="card-body"><h3 class="card-text toggle-content-element question">%question%<span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3><p class="card-text flowingtext toggle-element answer">%answer%</p></div></div></div>';
+            var template= '<div class="row gap-top-30"><div class="col-sm card"><div class="card-body"><h3 class="card-text toggle-content-element question">%question1%<span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3><p class="card-text flowingtext toggle-element answer">%answer1%</p></div></div><div class="col-sm card"><div class="card-body"><h3 class="card-text toggle-content-element question">%question2%<span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3><p class="card-text flowingtext toggle-element answer">%answer2%</p></div></div></div>';
 
 
 
 
 
 
-            var obj= {},
-                listQuestion,
-                listAnswer;
+            var obj= {};
             obj= JSON.parse(xhttp.responseText);
 
-            listQuestion=  document.querySelectorAll(domStrings.question);
-             listAnswer=  document.querySelectorAll(domStrings.answer);
 
-           for( i=0; i< listQuestion.length; i++) {
 
-               listQuestion[i].innerHTML = obj.faq[i+1].q;
-               newTemplate = template.replace('%question%', obj.faq[i+1].q);
-               document.querySelector(.faq-el).insertAdjacentHTML('beforeend', newTemplate);
+           for( i=0; i< Object.keys(obj.faq).length; i+=2) {
+
+
+               newTemplate = template.replace('%question1%', obj.faq[i].q);
+               newTemplate = newTemplate.replace('%answer1%', obj.faq[i].a);
+
+               newTemplate = newTemplate.replace('%question2%', obj.faq[i+1].q);
+               newTemplate = newTemplate.replace('%answer2%', obj.faq[i+1].a);
+
+
+               document.querySelector('.faq-el').insertAdjacentHTML('beforeend', newTemplate);
+
+
 
            };
 
 
-            for( i=0; i< listAnswer.length; i++) {
-
-
-                listAnswer[i].innerHTML = obj.faq[i+1].a;
-
-            };
 
 
 
-           console.log( listAnswer);
+
         };
 
         loadjson.async(domWrite);
