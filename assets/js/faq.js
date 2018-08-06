@@ -1,10 +1,12 @@
+
+
 var FAQTZ=(function(){
 
-    loaderJson=(function(){
+    var loaderJson=(function(){
 
 
 
-        load={
+       var  load={
 
             async: function(cFunction) {
 
@@ -38,14 +40,9 @@ var FAQTZ=(function(){
 
 
 
-    uiController=(function(loadjson){
+    var uiController=(function(loadjson){
 
-        var domStrings ={
 
-            question: '.question',
-            answer: '.answer'
-
-        };
 
 
 
@@ -64,10 +61,10 @@ var FAQTZ=(function(){
 
 
 
-           for( i=0; i< Object.keys(obj.faq).length; i+=2) {
+           for(var  i=0; i< Object.keys(obj.faq).length; i+=2) {
 
 
-               newTemplate = template.replace('%question1%', obj.faq[i].q);
+               var newTemplate = template.replace('%question1%', obj.faq[i].q);
                newTemplate = newTemplate.replace('%answer1%', obj.faq[i].a);
 
                newTemplate = newTemplate.replace('%question2%', obj.faq[i+1].q);
@@ -87,10 +84,14 @@ var FAQTZ=(function(){
 
         };
 
-        loadjson.async(domWrite);
+      function init(){
 
+       loadjson.async(domWrite);
 
-       //console.log(json);
+      };
+
+        return init;
+
 
 
 
@@ -99,15 +100,11 @@ var FAQTZ=(function(){
     })(loaderJson);
 
 
-    return {loaderJson, uiController};
+    return {uiController, loaderJson};
 
 
 })();
 
-//console.log(FAQTZ.loaderJson.async());
+FAQTZ.uiController();
 
-
-//console.log(FAQTZ.uiController.json);
-//FAQTZ.async();
-
-//export default FAQ_TZ;
+export default FAQTZ;

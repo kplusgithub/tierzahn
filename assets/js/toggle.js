@@ -1,5 +1,6 @@
+
 import MYNS from './leaflet.js';
-//import FAQTZ from './faq.js';
+import FAQTZ from './faq.js';
 
 
 MYNS.toggle= function () {
