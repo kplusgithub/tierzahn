@@ -1,0 +1,54 @@
+{
+    "faq":[ {
+        
+        "q":"Welche Tierarten werden in dieser Praxis behandelt?",
+        "a":"In unserer Tierarztpraxis werden folgende Tierarten von uns betreut: Hunde, Katzen, Frettchen, Heimtiere wie Kaninchen, Meerschweinchen, Degus, Chinchillas, Ratten und Mäuse, alle Vogelarten und Reptilien. "
+        
+        
+        
+    },
+    
+      {
+        
+        "q":"Welche Leistungen bietet diese Praxis an?",
+        "a":"Ausführliche Beratungsgespräche, gründliche Eingangs- und Kontrolluntersuchungen, Impfungen mit ausführlicher Allgemeinuntersuchung, Beratung bei Neuerwerb eines Tieres, Parasitenprophylaxe, Beratung bei der Zahnpflege, Ernährungsberatung, kostenlose Gewichtskontrolle, Sachkundetest für Hundehalter nach dem Landeshundegesetz NRW, Tierkennzeichnung durch Transponderimplantation und Tätowierung, Verhaltenstherapeutische Beratung, Beratung und palliative Betreuung bei geriatrischen Patienten und Tumorpatienten, Behandlung von Infektionskrankheiten, Wundversorgung, Zuchttauglichkeitsuntersuchung auf HD (Hüftgelenksdysplasie) und ED (Ellenbogendysplasie) mit digitaler Röntgentechnik."
+        
+        
+        
+    },
+    {
+        
+        "q":"Welche Tierarten werden in dieser Praxis kastriert?",
+        "a":"Wir führen die Kastration bei weiblichen und männlichen Hunden, Katzen, Frettchen, Kaninchen und Meerschweinchen durch."
+        
+        
+        
+    },
+      {
+        
+        "q":"Welche weiteren Operationen werden in der Praxis durchgeführt?",
+        "a":"Gesäugeoperationen, Weichteilchirurgie des Verdauungstraktes und der Blase, Penisamputation beim Kater, Bauch- und Tumorchirurgie an inneren Organen, Hernienoperationen, Laparoskopie, Video-Endoskopie (Magen-Darmspiegelung)"
+        
+        
+        
+    },
+      {
+        
+        "q":"Mein Kaninchen frisst nicht mehr, hat einen angespannten Bauch und einen gelblich verklebten Po. Was kann das sein?",
+        "a":"In solchen Fällen besteht bei weiblichen, nicht kastrierten Kaninchen immer die Gefahr einer eitrigen Gebärmutterentzündung. Folgend wird als Beispiel ein Fall aus unserer Praxis vorgestellt: Das Kaninchen war seit zwei Tagen inappetent, hatte eine hochgradig angespannte Bauchdecke und eitrigen vaginalen Ausfluss. Als Therapie war eine Entfernung der Gebärmutter und beider Eierstöcke notwendig."
+        
+        
+        
+    },
+      {
+        
+        "q":"Meine Katze frisst nicht mehr, zieht sich zurück und hat einen schmerzhaften, angespannten Bauch. Was kann sie haben?",
+        "a":"Bei unkastrierten Katzen mit der beschriebenen Symptomatik sollte immer an eine eitrige Gebärmutterentzündung gedacht werden. Auch hier ein Fallbeispiel aus unserer Praxis: Die Katze fraß seit Tagen nicht mehr und zog sich immer mehr zurück. Das Abtasten der Bauchdecke war sehr schmerzhaft. Die Körpertemperatur war mit 40,1°C erhöht. Die Blutuntersuchung ließ auf eine akute Entzündung im Körper schließen. Das Röntgenbild zeigte eine große Masse im Bauch. Als Therapie wurde eine chirurgische Entfernung der Gebärmutter inklusive der Eierstöcke notwendig."
+        
+        
+        
+    }
+    
+    ]
+    
+}
