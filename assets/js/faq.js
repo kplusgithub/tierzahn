@@ -49,7 +49,12 @@ var FAQTZ=(function(){
         function domWrite(xhttp) {
 
 
-            var template= '<div class="row gap-top-30"><div class="col-sm card"><div class="card-body"><h3 class="card-text toggle-content-element question">%question1%<span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3><p class="card-text flowingtext toggle-element answer">%answer1%</p></div></div><div class="col-sm card"><div class="card-body"><h3 class="card-text toggle-content-element question">%question2%<span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3><p class="card-text flowingtext toggle-element answer">%answer2%</p></div></div></div>';
+            var template= '<div class="row gap-top-30"><div class="col-sm card"><div class="card-body">' +
+                '<h3 class="card-text toggle-content-element question">%question1%<span style="float: right;">' +
+                '<img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span></h3>' +
+                '<p class="card-text flowingtext toggle-element answer">%answer1%</p></div></div><div class="col-sm card"><div class="card-body">' +
+                '<h3 class="card-text toggle-content-element question">%question2%<span style="float: right;"><img src="assets/img/icons/baseline-arrow_drop_down-24px.svg" width="30px;"></span>' +
+                '</h3><p class="card-text flowingtext toggle-element answer">%answer2%</p></div></div></div>';
 
 
 
