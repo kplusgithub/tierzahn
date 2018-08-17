@@ -141,3 +141,27 @@
 
 
 
+.newsbar {z-index: 1;}
+
+.newsbar__container {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    z-index: 2;
+    opacity: 0.7;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #c9c9c9;
+}
+
+.newsbar__content {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+}

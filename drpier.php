@@ -118,7 +118,7 @@
     }
 
     #myInput {
-        background-image: url('/css/searchicon.png');
+        background-image: url('/assets/img/baseline_search_black_18dp.png');
         background-position: 10px 12px;
         background-repeat: no-repeat;
         width: 100%;
@@ -425,6 +425,19 @@ margin-top:20px !important;
 
 
 </div>
+
+
+
+
+
+  <div class="row gap-top-60">
+
+        <div class="col "></div>
+        <div class="col text-center">   <button type="button" class="btn btn-outline-danger gap-top-10 " >ZURÜCK ZUR STARTSEITE</button></div>
+
+        <div class="col "></div>
+
+    </div>
 
 
 

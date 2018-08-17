@@ -66,22 +66,21 @@ var FAQTZ=(function(){
 
 
 
-           for(var  i=0; i< Object.keys(obj.faq).length; i+=2) {
+               for(var  i=0; i< Object.keys(obj.faq).length; i+=2) {
 
 
-               var newTemplate = template.replace('%question1%', obj.faq[i].q);
-               newTemplate = newTemplate.replace('%answer1%', obj.faq[i].a);
+                   var newTemplate = template.replace('%question1%', obj.faq[i].q);
+                   newTemplate = newTemplate.replace('%answer1%', obj.faq[i].a);
 
-               newTemplate = newTemplate.replace('%question2%', obj.faq[i+1].q);
-               newTemplate = newTemplate.replace('%answer2%', obj.faq[i+1].a);
-
-
-               document.querySelector('.faq-el').insertAdjacentHTML('beforeend', newTemplate);
+                   newTemplate = newTemplate.replace('%question2%', obj.faq[i+1].q);
+                   newTemplate = newTemplate.replace('%answer2%', obj.faq[i+1].a);
 
 
+                   document.querySelector('.faq-el').insertAdjacentHTML('beforeend', newTemplate);
 
-           };
 
+
+               };
 
 
 
