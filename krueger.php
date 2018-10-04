@@ -189,7 +189,7 @@ margin-top:20px !important;
 
     <div class="containerH">
 
-    <img src="assets/img/header.jpg" class="img-fluid" width="100%">
+    <img src="assets/img/krueger-header.jpg" class="img-fluid" width="100%">
         <div class="bottom-left  fontcolor-red">
             <h1 class="headline">HEADLINE</h1>
             <h2 class="subheadline">SUBHEADLINE</h2>

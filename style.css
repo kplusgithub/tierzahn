@@ -107,7 +107,9 @@
     margin-right: 4%;
 }
 
-
+.card--cursor {
+    cursor: pointer;
+}
 .toggle-element {
     display: none;
 }
